@@ -49,3 +49,13 @@ function geoReport() {
   
     navigator.geolocation.getCurrentPosition(success, error);
   }
+
+  // view all
+  function viewAll(){
+    location.href = "viewAll.html";
+  }
+
+  // sign Up
+  function signUp(){
+    location.href = "signup.html";
+  }
