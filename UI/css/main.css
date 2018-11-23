@@ -85,9 +85,10 @@ nav ul{
 
   /* footer */
   footer{
-      position: fixed;
+      /* position: fixed;
       left: 0;
-      bottom: 0;
+      bottom: 0; */
+      padding: 10px;
       width: 100%;
       background-color: #1d1d1d;
       color: white;
