@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin change status</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/viewall.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+  <div class="intro" id="welcome-section">
+    <div class="bg">
+      <nav id="navbar">
+        <ul>
+          <li style="float:left"><a class="active" href="index.html">iReporter</a></li>
+          <li style="float: right"><a href="admin-list-all.html">List all reports</a></li>
+        </ul>
+      </nav>
+      <div class="table-container">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>User Email</th>
+                <th>Corruption/Intervention Type</th>
+                <th>User Brief Description</th>
+                <th>Date Created</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>joedoe@me.com</td>
+                <td>Bribe</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque,
+                     dolor sed molestie sollicitudin, amet bibendum neque lectus quis risus.</td>
+                <td>12/06/2030</td>
+                <td>
+                    <select>
+                        <option value="resolved">resolved</option>
+                        <option value="unresolved">unresolved</option>
+                        <option value="rejected">rejected</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>janedoe@me.com</td>
+                <td>Floods</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque,
+                        dolor sed molestie sollicitudin.</td>
+                <td>12/06/2030</td>
+                <td>
+                    <select>
+                        <option value="resolved">resolved</option>
+                        <option value="unresolved">unresolved</option>
+                        <option value="rejected">rejected</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>johndoe@me.com</td>
+                <td>Health</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque,
+                        dolor sed molestie.</td>
+                <td>12/06/2030</td>
+                <td>
+                    <select>
+                        <option value="resolved">resolved</option>
+                        <option value="unresolved">unresolved</option>
+                        <option value="rejected">rejected</option>
+                    </select>
+                </td>
+            </tr>
+        </table>      
+      </div>
+    </div>
+  </div>
+    
+  <footer>
+    <p>designed by kamania</p>
+  </footer>
+</body>
+</html>
