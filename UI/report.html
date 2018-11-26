@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/report.css" />
+    
+    
+</head>
+<body>
+  <div class="intro container" id="welcome-section">
+    <div class="bg">
+        <nav id="navbar">
+            <ul>
+              <li style="float:left"><a class="active" href="index.html">iReporter</a></li>
+              <li style="float: right"><a href="profile.html">profile</a></li>
+            </ul>
+          </nav> 
+      
+      <div class="tab">
+        <button class="tablinks" onclick="viewReport(event, 'red-flag')" id="defaultOpen">Red-Flag</button>
+        <button class="tablinks" onclick="viewReport(event, 'intervention')">Intervention</button>
+      </div>
+      
+      <div id="red-flag" class="tabcontent">
+        <h3>Red-Flag</h3>
+        <div class="form-container">
+          <form action="#">
+            <label for="orgName">Organization Name</label>
+            <input type="text" id="orgName" name="organizationName" placeholder="organization name">
+
+            <label for="personName">Alleged Person's Name</label>
+            <input type="text" id="personName" name="personName" placeholder="Alleged Person's name">
+
+            <label for="corruption">Type of Corruption</label>
+            <select id="corruption" name="corruption">
+              <p><option value="bribe">Bribe</option></p>>
+              <p><option value="graft">Graft</option></p>
+              <p><option value="blackmail">Blackmail</option></p>
+              <p><option value="preferentialTreat">Preferential Treatment</option></p>
+              <p><option value="other">Other</option></p>
+            </select>
+
+            <label for="other">Other</label>
+            <input type="text" id="other" name="other" placeholder="If answer above is other, please specify">
+
+            <label for="description">Brief description of the report</label>
+            <textarea id="description" placeholder="Add brief description"></textarea>
+            
+            <label for="pic">Upload Photo</label>
+            <p><input type="file" id="pic" name="picture" accept="image/*"></p>
+            
+            <label for="vid">Upload Video</label>
+            <p><input type="file" id="vid" name="video" accept="video/*"></p>
+            
+            <label for="geolocate">Add Geolocation</label>
+            <p><input id="geolocate" class="geoButton" type="button" value="Geolocate" onclick="geoReport()"></p>
+            <div id="out"></div>
+
+            <input onclick="viewAll()" type="button" value="View all reports">
+
+            <input class="submit" type="submit" value="Submit">
+          </form>
+      </div>      
+    </div>
+    
+    <div id="intervention" class="tabcontent">
+      <h3>Intervention</h3>
+      <div class="form-container">
+        <form action="#">
+          <label for="orgName">Organization Name</label>
+          <input type="text" id="orgName" name="organizationName" placeholder="organization name">
+
+          <label for="personName">Alleged Person's Name</label>
+          <input type="text" id="personName" name="personName" placeholder="Alleged Person's name">
+
+          <label for="intervene">Type of Intervention</label>
+          <select id="intervene" name="intervention">
+            <option value="transport">Transport</option>
+            <option value="health">Health</option>
+            <option value="floods">Floods</option>
+            <option value="teenagePregnancy">Teenage Pregnancy</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="other">Other</label>
+          <input type="text" id="other" name="other" placeholder="If answer above is other, please specify">
+
+          <label for="description">Brief description of the report</label>
+          <textarea id="description" placeholder="Add brief description"></textarea>
+
+          <label for="pic">Upload Photo</label>
+          <p><input type="file" id="pic" name="picture" accept="image/*"></p>
+          
+          <label for="vid">Upload Video</label>
+          <p><input type="file" id="vid" name="video" accept="video/*"></p>
+
+          <label for="geolocate">Add Geolocation</label>
+          <p><input id="geolocate" class="geoButton" type="button" value="Geolocate" onclick="geoReport()"></p>
+          <div id="out"></div>
+
+          <input class="submit" type="submit" value="Submit">
+        </form>
+      </div> 
+    </div>
+  </div>
+  </div>
+  <footer>
+    <p>designed by kamania</p>
+  </footer>
+  <script src="main.js"></script>  
+</body>
+</html>
